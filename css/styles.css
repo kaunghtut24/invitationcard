@@ -97,12 +97,15 @@ body {
   top: 0;
   left: 50%;
   transform-origin: left center;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  transition: transform 0.9s cubic-bezier(0.4, 0.2, 0.2, 1);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: transform 0.6s ease;
   cursor: pointer;
   z-index: 1;
-  will-change: transform;
 }
 
 .page-front,
@@ -124,6 +127,13 @@ body {
     inset 0 0 40px rgba(212, 175, 55, 0.05);
   overflow: hidden;
   contain: layout style paint;
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+}
+
+.page-back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 /* Page overlay for readability */
@@ -138,6 +148,8 @@ body {
   background: rgba(255, 255, 255, 0.85);
   z-index: 0;
   pointer-events: none;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 .page-front {
@@ -1171,6 +1183,7 @@ button:focus,
   .page-front,
   .page-back {
     padding: 20px;
+    background-blend-mode: normal !important;
   }
 
   h1 {
