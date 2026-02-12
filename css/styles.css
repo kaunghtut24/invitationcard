@@ -33,8 +33,9 @@
 
   --max-text-width: 620px;
 
-  --page-padding: clamp(30px, 5vw, 60px);
-  --section-gap: 28px;
+  --page-padding: clamp(50px, 6vw, 80px);
+  --section-gap: 36px;
+  --max-text-width: 580px;
 }
 
 /* Reset */
@@ -165,12 +166,23 @@ body {
   width: 100%;
 }
 
+/* Subtle Vertical Rhythm */
+.page-inner > * + * {
+  margin-top: 18px;
+}
+
 /* Page-Specific Composition Rules */
 
 /* Cover Page */
 .page[data-page="cover"] h1 {
   font-size: var(--font-cover-title);
   text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+
+.page[data-page="cover"] h2 {
+  margin-bottom: 20px;
 }
 
 .page[data-page="cover"] .page-inner {
@@ -215,6 +227,8 @@ body {
 .ceremony-block-mm,
 .ceremony-block-en {
   margin-bottom: var(--section-gap);
+  padding-top: 12px;
+  border-top: 1px solid rgba(212, 175, 55, 0.4);
 }
 
 .page h2,
@@ -1172,10 +1186,9 @@ button:focus,
     --font-cover-title: 22px;
     --font-body-mm: 15px;
     --font-body-en: 14px;
-  }
-
-  .page-inner {
-    max-width: 100%;
+    --page-padding: 30px;
+    --section-gap: 20px;
+    --max-text-width: 100%;
   }
 }
 
