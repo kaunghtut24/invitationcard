@@ -1,0 +1,60 @@
+{
+  "event": {
+    "title_mm": "မြန်မာရှင်ပြု ရဟန်းခံ မင်္ဂလာ",
+    "title_en": "Novitiation and Ordination Ceremony",
+    "family": "ဦးမြင့်နှင့် ဒေါ်မြင့်မိသားစု",
+    "year": "၂၀၂၆"
+  },
+
+  "ceremonies": [
+    {
+      "type": "shinpyu",
+      "label_mm": "ရှင်ပြု",
+      "label_en": "Novitiation Ceremony",
+      "description_mm": "ရှင်ပြုပွဲသည် မြန်မာဗုဒ္ဓဘာသာ ထုံးတမ်းစဉ်လာအရ သာမနureka ယောက်ျားလေးတစ်ယောက် ရှင်သံဃာဝင်ခြင်း သို့မဟုတ် ရဟန်းဘဝကို အရင်ခဏ ခဏတံခါးသွားရောက်ခြင်းဖြစ်ပါသည်။ ဤအခမ်းအနားသည် လူ့ဘဝတွင် အရေးကြီးဆုံးသော ခရီးမှတ်များ အနက် တစ်ခုဖြစ်ပြီး မိသားစုဝင်အားလုံးအတွက် ဘုန်းကြီးသော ကုသိုလ်တစ်ခုဖြစ်ပါသည်။",
+      "description_en": "The Shinpyu ceremony marks a significant rite of passage in Myanmar Buddhist tradition, where a young boy temporarily enters the monastic life as a novice monk. This sacred occasion represents the family's meritorious deed and the beginning of spiritual journey toward enlightenment.",
+      "date": "၁၃ ဧပြီ ၂၀၂၆",
+      "time": "နံနက် ၉ နာရီ",
+      "venue": "သာသနာ့နယ်မြေ ဘုန်းတော်ကြီးကျောင်း",
+      "address": "အမှတ် ၁၂၃၊ ဗိုလ်တထောင်လမ်း၊ ရန်ကုန်မြို့",
+      "image": "/assets/images/shinpyu.jpg"
+    },
+    {
+      "type": "rahadan",
+      "label_mm": "ရဟန်းခံ",
+      "label_en": "Ordination Ceremony",
+      "description_mm": "ရဟန်းခံအခမ်းအနားတွင် ရှင်လောင်းအား ရဟန်း အဆင့်သို့ တင်ပေးမည်ဖြစ်ပါသည်။ ဘုရားရှင်ကဲ့သို့ပင် လောကီစည်းစိမ်များကို စွန့်ခွာပြီး သောတာပတ္တိမဂ်၊ သက္ကဒါဂါမ်မဂ်အထိ ရောက်ရှိရန် ရည်ရွယ်ချက်ဖြင့် စတင်သော ခရီးဖြစ်ပါသည်။ ဤသည်မှာ မြတ်စွယ်တော်အတွက် အလွန်မြတ်သော ဆုတောင်းပေးခြင်းတစ်ခုဖြစ်ပါသည်။",
+      "description_en": "The Ordination Ceremony elevates the novice monk to full monk status. Following the footsteps of the Buddha, who renounced worldly attachments for enlightenment, this ceremony symbolizes the beginning of a profound spiritual journey. It is considered one of the most meritorious acts a family can perform.",
+      "date": "၁၅ ဧပြီ ၂၀၂၆",
+      "time": "နံနက် ၉ နာရီ",
+      "venue": "သာသနာ့နယ်မြေ ဘုန်းတော်ကြီးကျောင်း",
+      "address": "အမှတ် ၁၂၃၊ ဗိုလ်တထောင်လမ်း၊ ရန်ကုန်မြို့",
+      "image": "/assets/images/rahadan.jpg"
+    }
+  ],
+
+  "general": {
+    "invitation_mm": "သင်္ကြန်လဆန်း ၁၃ ရက်နေ့နှင့် ၁၅ ရက်နေ့တို့တွင် ကျင်းပမည့် နှစ်ပတ်လည်ရှင်ပြု ရဟန်းခံအခမ်းအနားသို့ ခင်ဗျားတို့အပေါင်းတို့ကို အထူးရ airtight ပင့်သက်လှဴပါသည်။ ခင်ဗျားတို့၏ ကျန်းမာရေးနှင့် ပျော်ရွှင်မှုအတွက် ဘုရားသခင်၏ အားထုတ်မှုများကို တောင်းဆိုပါသည်။",
+    "invitation_en": "We cordially invite you to the two-day Shinpyu Novitiation and Rahandhan Ordination Ceremonies to be held on the 13th and 15th days of Thingyan. Your presence and blessings will make this auspicious occasion complete.",
+    "blessing_mm": "သာသနာ့သီဟာဠာ သုံးပါးဖြစ်သော ဗုဒ္ဓ၊ ဓမ္မ၊ သံဃတို့က ခင်ဗျားတို့ မိသားစုအားလုံး ကျန်းမာရေးကောင်းခြင်း၊ ပျော်ရွှင်ခြင်း၊ စည်းစိမ်ဥစ္စာထောင်ရှားခြင်း တို့ဖြင့် ဘုန်းတန်ခိုးထက်ပြားစေပါစေ။ ဤကုသိုလ်ကောင်းမှူသည် လောကီနတ်လူအားလုံးအား ငြိမ်းချမ်းခြင်း၊ ပျော်ရွှင်ခြင်း၊ နိဗ္ဗာန်ရောက်ခြင်းတို့ကို ပေးစွမ်းပါစေ။",
+    "blessing_en": "May the Three Jewels (Buddha, Dhamma, Sangha) bless you and your family with health, happiness, and prosperity. May this meritorious deed bring peace, joy, and enlightenment to all sentient beings. May the merit gained from this ceremony follow you throughout your lives.",
+    "rsvp": "ကျေးဇူးပြု၍ ဧပြီလ ၁၀ ရက်နေ့မတိုင်မီ အောက်ပါဖုန်းနံပါတ်သို့ အကြိုသတင်းပို့ပေးပါရန်။ သင့်ရဲ့ရောက်ရှိခြင်းဟာ ကျွန်တော်တို့အတွက် အရေးပါပါတယ်။",
+    "contact": "၀၉ ၁၂၃ ၄၅၆ ၇၈၉",
+    "footer_text": "နတ်လူနတ်သားအားလုံး စည်းစည်းလုံလုံ လှိုက်လှဲစွာ ဖိတ်ကြားအပ်ပါသည်။ သင့်ရဲ့အားပေးမှုအတွက် ကျေးဇူးတင်ပါတယ်။"
+  },
+
+  "media": {
+    "backgroundMusic": {
+      "enabled": true,
+      "file": "/assets/audio/background-music.mp3",
+      "volume": 0.5,
+      "loop": true
+    },
+    "pages": {
+      "cover": "/assets/images/cover-bg.jpg",
+      "myanmar": "/assets/images/mm-bg.jpg",
+      "english": "/assets/images/en-bg.jpg",
+      "rsvp": "/assets/images/rsvp-bg.jpg"
+    }
+  }
+}

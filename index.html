@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shinpyu and Ordination Ceremony Invitation">
+  <meta name="theme-color" content="#6b0f1a">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://your-domain.com/" />
+  
+  <!-- Language Alternates -->
+  <link rel="alternate" hreflang="my" href="https://your-domain.com/" />
+  <link rel="alternate" hreflang="en" href="https://your-domain.com/?lang=en" />
+  
+  <!-- Open Graph / Social Share -->
+  <meta property="og:title" content="Shinpyu & Ordination Ceremony">
+  <meta property="og:description" content="Novitiation and Monkhood Ceremony Invitation">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://your-domain.com/assets/images/cover-bg.webp" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+  
+  <title>မြန်မာရှင်ပြု ရဟန်းခံ မင်္ဂလာ | Shinpyu & Ordination Ceremony Invitation</title>
+  
+  <!-- Preload Critical Resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="/css/styles.css" as="style">
+  <link rel="preload" href="/data/content.json" as="fetch" type="application/json" crossorigin="anonymous">
+  <link rel="preload" href="/assets/images/cover-bg.webp" as="image">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Myanmar:wght@400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css" />
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Shinpyu and Ordination Ceremony",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Ceremony Venue",
+      "address": "Myanmar"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="book-container">
+    <div class="book">
+      <!-- PAGE 1: COVER (Bilingual) -->
+      <div class="page" data-page="cover" data-page-index="0">
+        <div class="page-front">
+          <div class="paper-texture">
+            <div class="lotus-watermark"></div>
+            <header class="invitation-header">
+              <h1 class="ceremony-title" id="eventTitle"></h1>
+              <div class="ornament-top"></div>
+            </header>
+            <div class="cover-content">
+              <p class="cover-invitation">You are cordially invited to</p>
+              <div class="event-year" id="eventYear"></div>
+              <p class="cover-event" id="eventSubtitle"></p>
+              <p class="cover-hint">Tap to open</p>
+            </div>
+            <footer class="invitation-footer">
+              <div class="ornament-bottom"></div>
+              <p class="family-name" id="eventFamily"></p>
+            </footer>
+          </div>
+        </div>
+        <div class="page-back">
+          <div class="paper-texture">
+            <div class="lotus-watermark"></div>
+            <div class="language-indicator">MM</div>
+            <section class="invitation-section">
+              <h2 class="section-title-mm">ဖိတ်ကြားခြင်း</h2>
+              <p class="invitation-text-mm" id="invitationMm"></p>
+            </section>
+            <div class="page-number">1</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGE 2: MYANMAR CONTENT -->
+      <div class="page" data-page="myanmar" data-page-index="1">
+        <div class="page-front">
+          <div class="paper-texture">
+            <div class="lotus-watermark"></div>
+            <div class="language-indicator">MM</div>
+            <section class="ceremonies-section-mm">
+              <h2 class="section-title-mm">အခမ်းအနားများ</h2>
+              <div id="myanmarContent"></div>
+            </section>
+            <div class="page-number">2</div>
+          </div>
+        </div>
+        <div class="page-back">
+          <div class="paper-texture">
+            <div class="lotus-watermark"></div>
+            <div class="language-indicator">MM</div>
+            <section class="blessing-section-mm">
+              <h2 class="section-title-mm">ဆုတောင်းပေးခြင်း</h2>
+              <p class="blessing-text-mm" id="blessingMm"></p>
+            </section>
+            <div class="page-number">3</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGE 3: ENGLISH CONTENT -->
+      <div class="page" data-page="english" data-page-index="2">
+        <div class="page-front">
+          <div class="paper-texture">
+            <div class="lotus-watermark"></div>
+            <div class="language-indicator">EN</div>
+            <section class="invitation-section-en">
+              <h2 class="section-title-en">Invitation</h2>
+              <p class="invitation-text-en" id="invitationEn"></p>
+            </section>
+            <div class="page-number">4</div>
+          </div>
+        </div>
+        <div class="page-back">
+          <div class="paper-texture">
+            <div class="lotus-watermark"></div>
+            <div class="language-indicator">EN</div>
+            <section class="ceremonies-section-en">
+              <h2 class="section-title-en">Ceremonies</h2>
+              <div id="englishContent"></div>
+            </section>
+            <div class="page-number">5</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGE 4: RSVP + BLESSING (Bilingual) -->
+      <div class="page" data-page="rsvp" data-page-index="3">
+        <div class="page-front">
+          <div class="paper-texture">
+            <div class="lotus-watermark"></div>
+            <div class="language-indicator">EN</div>
+            <section class="blessing-section-en">
+              <h2 class="section-title-en">Blessing</h2>
+              <p class="blessing-text-en" id="blessingEn"></p>
+            </section>
+            <div class="page-number">6</div>
+          </div>
+        </div>
+        <div class="page-back">
+          <div class="paper-texture">
+            <div class="lotus-watermark"></div>
+            <div class="rsvp-section-bilingual">
+              <h2 class="rsvp-title-mm">တက်ရောက်မည့်အကြိမ်</h2>
+              <h2 class="rsvp-title-en">RSVP</h2>
+              <p class="rsvp-text" id="rsvpDetails"></p>
+              <div class="contact-info">
+                <span class="contact-label">Contact:</span>
+                <span class="contact-value" id="contactNumber"></span>
+              </div>
+            </div>
+            <div class="back-cover-content">
+              <p class="thank-you-mm">သင့်ရဲ့အားပေးမှုအတွက် ကျေးဇူးတင်ပါတယ်</p>
+              <p class="thank-you-en">Thank you for your blessings</p>
+              <div class="ornament-bottom"></div>
+              <p class="footer-text" id="footerText"></p>
+            </div>
+            <div class="page-number">7</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="book-controls">
+      <button class="nav-btn prev-btn" aria-label="Previous page">←</button>
+      <span class="page-indicator">1 / 8</span>
+      <button class="nav-btn next-btn" aria-label="Next page">→</button>
+    </div>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" preload="auto"></audio>
+
+  <audio id="temple-bell" preload="auto">
+    <source src="/assets/audio/temple-bell.ogg" type="audio/ogg">
+  </audio>
+
+  <script type="module" src="/js/script.js" defer></script>
+</body>
+</html>
