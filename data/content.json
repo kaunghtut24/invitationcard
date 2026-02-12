@@ -17,7 +17,7 @@
       "time": "နံနက် ၉ နာရီ",
       "venue": "သာသနာ့နယ်မြေ ဘုန်းတော်ကြီးကျောင်း",
       "address": "အမှတ် ၁၂၃၊ ဗိုလ်တထောင်လမ်း၊ ရန်ကုန်မြို့",
-      "image": "/assets/images/shinpyu.jpg"
+      "image": "./assets/images/shinpyu.jpg"
     },
     {
       "type": "rahadan",
@@ -29,7 +29,7 @@
       "time": "နံနက် ၉ နာရီ",
       "venue": "သာသနာ့နယ်မြေ ဘုန်းတော်ကြီးကျောင်း",
       "address": "အမှတ် ၁၂၃၊ ဗိုလ်တထောင်လမ်း၊ ရန်ကုန်မြို့",
-      "image": "/assets/images/rahadan.jpg"
+      "image": "./assets/images/rahadan.jpg"
     }
   ],
 
@@ -46,15 +46,15 @@
   "media": {
     "backgroundMusic": {
       "enabled": true,
-      "file": "/assets/audio/background-music.mp3",
+      "file": "./assets/audio/background-music.mp3",
       "volume": 0.5,
       "loop": true
     },
     "pages": {
-      "cover": "/assets/images/cover-bg.jpg",
-      "myanmar": "/assets/images/mm-bg.jpg",
-      "english": "/assets/images/en-bg.jpg",
-      "rsvp": "/assets/images/rsvp-bg.jpg"
+      "cover": "./assets/images/cover-bg.jpg",
+      "myanmar": "./assets/images/mm-bg.jpg",
+      "english": "./assets/images/en-bg.jpg",
+      "rsvp": "./assets/images/rsvp-bg.jpg"
     }
   }
 }

@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 async function loadContent() {
   try {
-    const response = await fetch('/data/content.json');
+    const response = await fetch('./data/content.json');
     
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
@@ -295,7 +295,7 @@ function useFallbackContent() {
       time: 'နံနက် ၉ နာရီ',
       venue: 'ဘုန်းတော်ကြီးကျောင်း',
       address: 'ရန်ကုန်မြို့',
-      image: '/assets/images/shinpyu.jpg'
+      image: './assets/images/shinpyu.jpg'
     },
     {
       label_mm: 'ရဟန်းခံ',
@@ -306,7 +306,7 @@ function useFallbackContent() {
       time: 'နံနက် ၉ နာရီ',
       venue: 'ဘုန်းတော်ကြီးကျောင်း',
       address: 'ရန်ကုန်မြို့',
-      image: '/assets/images/rahadan.jpg'
+      image: './assets/images/rahadan.jpg'
     }
   ];
   
