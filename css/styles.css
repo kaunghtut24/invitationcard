@@ -21,6 +21,20 @@
   --page-height: 550px;
   --page-perspective: 2000px;
   --flip-duration: 0.6s;
+
+  /* Typography Scale System */
+  --font-cover-title: clamp(28px, 3.5vw, 44px);
+  --font-section-title: clamp(18px, 1.5vw, 22px);
+  --font-body-mm: clamp(16px, 1.2vw, 18px);
+  --font-body-en: clamp(15px, 1.1vw, 17px);
+
+  --line-mm: 2;
+  --line-en: 1.8;
+
+  --max-text-width: 620px;
+
+  --page-padding: clamp(30px, 5vw, 60px);
+  --section-gap: 28px;
 }
 
 /* Reset */
@@ -134,6 +148,85 @@ body {
   z-index: 1;
   transform: rotateY(180deg);
   border-radius: 12px 4px 4px 12px;
+}
+
+/* Vertical Balance Control */
+.page-front,
+.page-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Structured Page Inner Wrapper */
+.page-inner {
+  max-width: var(--max-text-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Page-Specific Composition Rules */
+
+/* Cover Page */
+.page[data-page="cover"] h1 {
+  font-size: var(--font-cover-title);
+  text-align: center;
+}
+
+.page[data-page="cover"] .page-inner {
+  text-align: center;
+}
+
+/* Myanmar Page */
+.page[data-page="myanmar"] {
+  font-size: var(--font-body-mm);
+  line-height: var(--line-mm);
+}
+
+.page[data-page="myanmar"] .page-inner {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* English Page */
+.page[data-page="english"] {
+  font-size: var(--font-body-en);
+  line-height: var(--line-en);
+}
+
+.page[data-page="english"] .page-inner {
+  text-align: justify;
+}
+
+/* RSVP Page */
+.page[data-page="rsvp"] .page-inner {
+  text-align: center;
+}
+
+/* Long Content Pages - Allow Scrolling */
+.page[data-page="myanmar"] .page-front,
+.page[data-page="english"] .page-front {
+  justify-content: flex-start;
+  padding-top: 40px;
+}
+
+/* Section Spacing Harmony */
+.ceremony-block,
+.ceremony-block-mm,
+.ceremony-block-en {
+  margin-bottom: var(--section-gap);
+}
+
+.page h2,
+.page h3 {
+  font-size: var(--font-section-title);
+  margin-bottom: 16px;
+}
+
+/* Prevent Visual Overcrowding */
+.page {
+  padding: var(--page-padding);
+  overflow: hidden;
 }
 
 /* Page Stacking Order - Updated for 4 pages (8 sides) */
@@ -1072,6 +1165,17 @@ button:focus,
 
   h2 {
     font-size: 18px;
+  }
+
+  /* Mobile Typography Refinement */
+  :root {
+    --font-cover-title: 22px;
+    --font-body-mm: 15px;
+    --font-body-en: 14px;
+  }
+
+  .page-inner {
+    max-width: 100%;
   }
 }
 
