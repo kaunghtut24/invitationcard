@@ -35,6 +35,8 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true,
+    host: true, // Allow access from local network
+    strictPort: false, // Try next available port if 3000 is taken
   },
   
   // Static asset handling
